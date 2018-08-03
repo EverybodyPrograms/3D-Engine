@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: #56d4b9;
+    height: 100vh;
+}
+
+.wrapper {
+    padding-top: 10px;
+    text-align: center;
+    margin: 0px;
+    border: 5px solid white;
+    font-family: Verdana;
+    height: 100%;
+    color: #FFF
+}
+
+h1 {
+    border: 7px solid #000;
+    margin: 0px auto;
+    width: 20%;
+    border-radius: 20px;
+    background: #88f0d1;
+    color: #000
+}
