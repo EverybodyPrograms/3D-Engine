@@ -1,13 +1,18 @@
-* {
-    box-sizing: border-box;
-}
-
 html,
 body {
     padding: 0;
     margin: 0;
     background: #56d4b9;
-    height: 100vh;
+}
+
+#footer {
+    background: #2da4ad;
+    text-align: center;
+    color: #FFF;
+    font-family: Arial;
+    bottom: 0px;
+    height: 53px;
+    padding-top: 30px;
 }
 
 .wrapper {
@@ -17,7 +22,8 @@ body {
     border: 5px solid white;
     font-family: Verdana;
     height: 100%;
-    color: #FFF
+    color: #FFF;
+    padding-bottom: 10px
 }
 
 h1 {
