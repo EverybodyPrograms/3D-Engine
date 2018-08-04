@@ -236,7 +236,7 @@ function loop() {
     }
 
     for (let i = 0; i < 1000; i++) {
-        cube(0, i, i, 2, 2, 2)
+        cube(i, i, i, 2, 2, 2)
         ctx.strokeStyle = "hsl(" + i + ", 100%, 50%)"
     }
 
