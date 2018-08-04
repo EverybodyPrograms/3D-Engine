@@ -32,5 +32,6 @@ h1 {
     width: 20%;
     border-radius: 20px;
     background: #88f0d1;
-    color: #000
+    color: #000;
+    display: inline-block;
 }
