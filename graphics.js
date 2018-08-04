@@ -1,5 +1,6 @@
 let c = document.getElementById("canvas")
 let ctx = c.getContext("2d")
+let baw = document.getElementById("baw")
 ctx.translate(c.width / 2, c.height / 2)
 let wPressed = false
 let sPressed = false
@@ -177,12 +178,12 @@ function yRotate(angle) {
 // }
 
 function cube(x, y, z, sx, sy, sz, rx, ry, rz) {
-    let left = x - sx / 2,
-        right = x + sx / 2,
-        front = z + sz / 2,
-        back = z - sz / 2,
-        top = y - sy / 2,
-        bottom = y + sy / 2
+    let left = x - (sx / 2),
+        right = x + (sx / 2),
+        front = z + (sz / 2),
+        back = z - (sz / 2),
+        top = y - (sy / 2),
+        bottom = y + (sy / 2)
 
     //small square
     line(right + camera.x + x, top + camera.y + y, 1 - camera.z + z, left + camera.x + x, top + camera.y + y, 1 - camera.z + z)
@@ -206,7 +207,10 @@ function cube(x, y, z, sx, sy, sz, rx, ry, rz) {
 ctx.lineWidth = 1
 //de loop
 function loop() {
-    ctx.fillStyle = "rgb(255,255,255)"
+    if (baw.checked == true)
+        ctx.fillStyle = "#000"
+    else
+        ctx.fillStyle = "#FFF"
     ctx.fillRect(0 - (c.width / 2), 0 - (c.height / 2), c.width, c.height)
     xRotate(xRot)
     yRotate(yRot)
