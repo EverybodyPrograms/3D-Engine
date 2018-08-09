@@ -238,11 +238,11 @@ function loop() {
             camera.yVel += 0.75
         }
     }
-
-    for (let i = 1000; i > 0; i--) {
-        cube(0, 0, i, 2, 2, 2)
-        ctx.strokeStyle = "hsl(" + i + ", 100%, 50%)"
-    }
+    for (let j = 100; j > 0; j--)
+        for (let i = 100; i > 0; i--) {
+            cube(j, -i + -j, 2 * i, 2, 2, 2)
+            ctx.strokeStyle = "hsl(" + i + ", 100%, 50%)"
+        }
 
     //dotCube(20, 0, 0)
     cube(10, 0, 10, 2, 2, 2)
